@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>sedona</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/untitled.css">
-    <meta charset="utf-8"/>
-    <style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="css/untitled.css">
+	<meta charset="utf-8" />
+	<style type="text/css"></style>
 </head>
+
 <body>
 	<header class="header">
 		<nav class="hamburger-menu">
-				<a href="#" class="header__logo"><img src="img/logotyle-mobile.svg.png" width="102" height="83" alt="логотип"></a>
-				<button class="menu__button"><span></span></button>
+			<a href="#" class="header__logo"><img src="img/logotyle-mobile.svg.png" width="102" height="83" alt="логотип"></a>
+			<button class="header__menu-button"><span></span></button>
 			<ul class="hamburger-item">
-				<li><a href="-index.html" class="item__home">ГЛАВНАЯ</a><input type="checkbox"></input></li>
-				<li><a href="-photo.html" class="item__foto">ФОТО И ВИДИО</a></li>
-				<li><a href="-form.html" class="item__form">ФОРМА ОТЗЫВА</a></li>
-				<li><a href="https://htmlacademy.ru/" class="item__hyml">HTML ACADEMY</a></li>
+				<li><a href="-index.html" class="hamburger-item__home">ГЛАВНАЯ</a></li>
+				<li><a href="-photo.html" class="hamburger-item__foto">ФОТО И ВИДИО</a></li>
+				<li><a href="-form.html" class="hamburger-item__form">ФОРМА ОТЗЫВА</a></li>
+				<li><a href="https://htmlacademy.ru/" class="hamburger-item__hyml">HTML ACADEMY</a></li>
 			</ul>
-		    <div class="header__background-1">
-			<img src="img/SEDONA.png" class="header__text-index-1" width="229" height="39">
-		    </div>
+			<div class="header__background-1">
+				<img src="img/SEDONA.png" class="header__text-index-1" width="229" height="39">
+			</div>
 		</nav>
 	</header>
 	<main class="page-form">
-		<div class="block-review">	
-		<h2 class="block-review__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
-		<p class="block-review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТОВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-	    </div>
-		<form method="get" action="https://echo.htmlacademy.ru" class="main-block">	
-		<fieldset>	
-		<div class="blick-name">
-			<h3 class="blick-name__title">ПрЕДСТАВТЕСЬ:</h3>
-			<ul class="blick-name__item">
-				<li class="blick-name__item-1"><p>ИМЯ*;</p><input type="text" required></li>
-				<li class="blick-name__item-2"><p>ФАМИЛИЯ*;</p><input type="text" required></li>
-				<li class="blick-name__item-3"><p>ОТЧЕСТВО;</p><input type="text" required></li>
-			</ul>
-        </div>
-    	</fieldset>
-        <fieldset>
-        <div class="block-contacts">
-			<h3 class="block-contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
-			<ul class="block-contacts__item">
-				<li class="block-contacts__item-1"><p>КОНТАКТНЫЙ ТЕЛЕФОН*;</p><input type="text" name="" value="" placeholder="Введите телефон" required></li>
-				<li class="block-contacts__item-2"><p>ЭЛЕКТРОННАЯ ПОЧТА*;</p><input type="text" name="" value="" placeholder="Введите e-mail" required></li>
-			</ul>
+		<div class="block-review">
+			<h2 class="block-review__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+			<p class="block-review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТОВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
 		</div>
-		</fieldset>
-		<fieldset>
-		<div class="block-impression">
-			<h3 class="block-impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
-			<ul class="block-impression__item">
-				<li><input type="radio" name="assessment" value="on" id="good"><p><label for="good">Скорее положительное</label></p></li>
-				<li><input type="radio" name="assessment" value="on" id="bad"><p><label for="bad">Скорее отрицательное</label></p></li>
-				<li><input type="radio" name="assessment" value="on" id="maybe"><p><label for="maybe">Затрудняюсь ответить</label></p></li>
-			</ul>
-		</div>
-		</fieldset>
-		<fieldset>
-		<div class="block-attraction">	
-			<h3 class="block-attraction__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h3>
-			<ul class="block-attraction__item">
-				<li><input type="checkbox" name="sight" id="1"><p><label for="1">Мост Дьявола</label></p></li>
-				<li><input type="checkbox" name="sight" id="2"><p><label for="2">Гора-Колокол</label></p></li>
-				<li><input type="checkbox" name="sight" id="3"><p><label for="3">Слайд-парк</label></p></li>
-				<li><input type="checkbox" name="sight" id="4"><p><label for="4">Красные скалы</label></p></li>
-			</ul>
-		</div>
-	    </fieldset>
-	    <fieldset>
-		<div class="block-comment">	
-			<h3 class="block-comment__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
-			<textarea placeholder="Опишите подробно все свои восторги" name="comment" class="block-comment__input"></textarea>
-		</div>
-		</fieldset>
-		<p><button type="submit"name="review" class="block-comment__button">ОТПРАВИТЬ ОТЗЫВ</button></p>	
-		</form>
-	</main>
-	<footer class="footer">
-		<h3 class="footer__title">#VISITSEDONA</h3>
-		<ul class="footer__item">
-			<li class="footer__item__twitter"><a href="#"></a></li>
-			<li class="footer__item__facebook"><a href="#"></a></li>
-			<li class="footer__item__youtube"><a href="#"></a></li>
-		</ul>
-		<span class="footer__developed"><a href="https://htmlacademy.ru/"><p class="footer__text">РАЗРАБОТАНО<img src="img/htmlacademy.svg.png" class="footer__logo" width="27" height="34"></p></a></span>
-	</footer>
-</body>
-</html>
+		<form method="get" action="https://echo.htmlacademy.ru" class="main-block">
+			<fieldset>
+				<div class="blick-name">
+					<h3 class="blick-name__title">ПрЕДСТАВТЕСЬ:</h3>
+					<ul class="blick-name__item">
+						<li class="blick-name__item-1">
+							<p>ИМЯ*;</p><input type="text" required></li>
+							<li class="blick-name__item-2">
+								<p>ФАМИЛИЯ*;</p><input type="text" required></li>
+								<li class="blick-name__item-3">
+									<p>ОТЧЕСТВО;</p><input type="text" required></li>
+								</ul>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div class="block-contacts">
+								<h3 class="block-contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+								<ul class="block-contacts__item">
+									<li class="block-contacts__item-1">
+										<p>КОНТАКТНЫЙ ТЕЛЕФОН*;</p><input type="text" name="" value="" placeholder="Введите телефон" required></li>
+										<li class="block-contacts__item-2">
+											<p>ЭЛЕКТРОННАЯ ПОЧТА*;</p><input type="text" name="" value="" placeholder="Введите e-mail" required></li>
+										</ul>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="block-impression">
+										<h3 class="block-impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
+										<ul class="block-impression__item">
+											<li><input type="radio" name="assessment" value="on" id="good">
+												<p><label for="good">Скорее положительное</label></p>
+											</li>
+											<li><input type="radio" name="assessment" value="on" id="bad">
+												<p><label for="bad">Скорее отрицательное</label></p>
+											</li>
+											<li><input type="radio" name="assessment" value="on" id="maybe">
+												<p><label for="maybe">Затрудняюсь ответить</label></p>
+											</li>
+										</ul>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="block-attraction">
+										<h3 class="block-attraction__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h3>
+										<ul class="block-attraction__item">
+											<li><input type="checkbox" name="sight" id="1">
+												<p><label for="1">Мост Дьявола</label></p>
+											</li>
+											<li><input type="checkbox" name="sight" id="2">
+												<p><label for="2">Гора-Колокол</label></p>
+											</li>
+											<li><input type="checkbox" name="sight" id="3">
+												<p><label for="3">Слайд-парк</label></p>
+											</li>
+											<li><input type="checkbox" name="sight" id="4">
+												<p><label for="4">Красные скалы</label></p>
+											</li>
+										</ul>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="block-comment">
+										<h3 class="block-comment__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
+										<textarea placeholder="Опишите подробно все свои восторги" name="comment" class="block-comment__input"></textarea>
+									</div>
+								</fieldset>
+								<p><button type="submit" name="review" class="main-block__button">ОТПРАВИТЬ ОТЗЫВ</button></p>
+							</form>
+						</main>
+						<footer class="footer">
+							<h3 class="footer__title">#VISITSEDONA</h3>
+							<ul class="footer__item">
+								<li class="footer__item__twitter"><a href="#"></a></li>
+								<li class="footer__item__facebook"><a href="#"></a></li>
+								<li class="footer__item__youtube"><a href="#"></a></li>
+							</ul>
+							<span class="footer__developed"><a href="https://htmlacademy.ru/"><p class="footer__text">РАЗРАБОТАНО<img src="img/htmlacademy.svg.png" class="footer__logo" width="27" height="34"></p></a></span>
+						</footer>
+					</body>
+
+					</html>
