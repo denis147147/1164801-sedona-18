@@ -1,123 +1,229 @@
-.adventages__title {
-    text-align: center;
-    margin-top: 45px;
-}
-.adventages__text {
-  text-align: center;
-  width: 280px;
-  margin-left: 20px;
-}
-
-.adventages__number {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.adventages__list {
+.adventages__item {
   h1 {
-    margin-top: 40px;
+    font-family: Arial,sans-serif;
+	  font-size: 18px;
+	  line-height: 26px;
+    line-height: 1.44;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 700;
+    padding-top: 43px;
   }
 
   p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    margin-left: 70px;
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 26px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 400;
+    padding-top: 20px;
   }
 }
 
 .adventages__item-1 {
-  background: linear-gradient( to bottom, #81b3d2 50%, #ffffff 40%);
- .adventages__list__item-1 h1:before {
-  content: url("../img/icon-house.svg.png");
-  position: relative;
-  top: 9px;
-  margin-right: 11px;
-  margin-left: 20px;
-}
+	background: linear-gradient( to bottom, #81b3d2 40%, #ffffff 40%);
 
-.adventages__list__item-2 h1:before {
-  content: url("../img/icon-gift.svg.png");
-  position: relative;
-  top: 9px;
-  margin-right: 12px;
-  margin-left: 25px;
-}
-
-.adventages__list__item-3 h1:before {
-  content: url("../img/icon-burger.svg.png");
-  position: relative;
-  top: 9px;
-  margin-right: 11px;
-  margin-left: 20px;
-}
-
-img {
-  position: relative;
-  top: 45px;
-}
-
-.adventages__title,
-.adventages__text {
-color: #ffffff;
-}
-}
-
-.adventages__item-2 {
-  background: linear-gradient( to bottom, #81b3d2 50%, #ffffff 40%);
-  color: #ffffff;
-
-  h1 {
-    position: relative;
-    top:45px;
+  &::before {
+    content: url("../img/white copy 2.png");
   }
 
-  p {
-
-  }
-
-  img{
-    position: relative;
-    top: 45px;
-  }
-}
-
-.adventages__item-3 {
-  justify-content: center;
-  background: linear-gradient( to bottom, #eeeeee 100%, #ffffff 0%);
-  h2 {
-    text-align: center;
+  h2{
+    font-family: Arial,sans-serif;
+	  font-size: 18px;
+	  line-height: 26px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 700;
+	  color: #ffffff;
     padding-top: 20px;
   }
 
   p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 21px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 400;
+	  color: #ffffff;
   }
 
-  .adventages__list__number {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    margin: 20px;
+  .adventages__text {
+    padding-bottom: 20px;
+  }
+}
+
+.adventages__list {
+
+  h3 {
+    font-family: Arial,sans-serif;
+	  font-size: 18px;
+  	line-height: 26px;
+	  text-transform: uppercase;
+	  font-weight: 700;
+    margin-left: 30px;
+  }
+
+  p {
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 21px;
+	  text-transform: uppercase;
+	  font-weight: 300;
+	  margin-left: 70px;
+    text-align: left;
+    color: #000000;
+  }
+}
+.adventages__list__item-1 {
+
+  h3::before {
+    content: url("../img/icon-house.svg.png");
+    position: relative;
+	  right: 10px;
+	  top: 8px;
+  }
+}
+
+.adventages__list__item-2 {
+
+  h3::before {
+    content: url("../img/icon-gift.svg.png");
+    position: relative;
+	  right: 13px;
+	  top: 8px;
+  }
+
+  h3 {
+    margin-left: 37px;
+  }
+}
+.adventages__list__item-3 {
+
+  h3::before {
+    content: url("../img/icon-burger.svg.png");
+    position: relative;
+	  right: 12px;
+	  top: 8px;
+  }
+}
+
+.adventages__item-2 {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	background: linear-gradient( to bottom, #81b3d2 70%, #ffffff 70%);
+
+  h2 {
+    font-family: Arial,sans-serif;
+	  font-size: 18px;
+	  line-height: 26px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 700;
+	  color: #ffffff;
+    padding-top: 20px;
+  }
+
+  p {
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 21px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 400;
+	  color: #ffffff;
+  }
+
+  .adventages__text {
+    padding-bottom: 20px;
+  }
+}
+
+.adventages__item-3 {
+  display: flex;
+	background-color:#eeeeee;
+
+  h2 {
+    font-family: Arial,sans-serif;
+	  font-size: 18px;
+	  line-height: 26px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 700;
+    padding-top: 20px;
+  }
+
+  p {
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 21px;
+	  text-transform: uppercase;
+	  font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .adventages__list__text {
-    width: 280px;
-    margin: 0 auto;
-    text-align: center;
+    padding-top: 20px;
+  }
 
+  .adventages__list__item-9 {
+    padding-bottom: 20px;
   }
 
   .adventages__list__item-3,
   .adventages__list__item-6 {
     border-bottom: 1px solid #d6d6d6;
-    width: 280px;
-    margin: 0 auto;
     padding-bottom: 30px;
+    width: 280px;
+    margin-left: 20px;
+  }
+}
+
+.to-book {
+  margin-top: 33px;
+
+  h3 {
+    font-family: Arial,sans-serif;
+	  font-size: 21px;
+	  line-height: 26px;
+	  text-align: center;
+    text-transform: uppercase;
+	  font-weight: 700;
+  }
+
+  p {
+    font-family: Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 26px;
+	  text-align: center;
+    text-transform: uppercase;
+  }
+
+  button {
+    border:none;
+	  text-transform: uppercase;
+	  font-family: Arial,sans-serif;
+	  font-size: 21px;
+	  line-height: 26px;
+	  width: 280px;
+	  height: 58px;
+	  background-color: #81b3d2;
+	  color: #ffffff;
+	  margin-left: 20px;
+	  margin-top: 30px;
+	  outline: none;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color:#5496bd;
+	    color: #88b6d1;
+    }
   }
 }
