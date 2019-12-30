@@ -1,0 +1,58 @@
+.form__attraction {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 44px;
+  margin-bottom: 24px;
+
+  &__title {
+  font-family: "ptsans",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  li {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .form__attraction__item {
+    font-family: "ptsans",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: inherit;
+
+    .form__attraction__item-1,
+    .form__attraction__item-2,
+    .form__attraction__item-3,
+    .form__attraction__item-4 {
+      input{
+        display: flex;
+        opacity: 0;
+      }
+
+      label {
+
+        &::before {
+          content: url("../img/Layer 28 copy 5.png");
+          position: relative;
+          right: 15px;
+          top: 20px;
+       }
+      }
+    }
+  }
+}
+
+.form__attraction__item-1,
+.form__attraction__item-2,
+.form__attraction__item-3,
+.form__attraction__item-4 {
+  
+  input:checked+label::before{
+    content: url("../img/tick.svg.png");
+  }
+}

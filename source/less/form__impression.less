@@ -1,0 +1,58 @@
+.form__impression {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 46px;
+  margin-bottom: 24px;
+
+  &__title {
+    font-family: "ptsans",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.form__impression__item {
+  font-family: "ptsans",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: inherit;
+
+  li {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+.form__impression__item-1,
+.form__impression__item-2,
+.form__impression__item-3 {
+
+   input{
+     display: flex;
+     opacity: 0;
+   }
+
+   label {
+
+     &::before {
+       content: url("../img/Shape 2 copy 19.png");
+       position: relative;
+       right: 15px;
+       top: 20px;
+     }
+   }
+}
+
+.form__impression__item-1,
+.form__impression__item-2,
+.form__impression__item-3 {
+
+  input:checked+label::before {
+    content: url("../img/Shape 2 copy 17.png");
+
+  }
+}
