@@ -1,6 +1,6 @@
 .form__impression {
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 46px;
+  padding-bottom: 32px;
   margin-bottom: 24px;
 
   &__title {
@@ -22,37 +22,39 @@
   text-transform: inherit;
 
   li {
-    margin-top: 10px;
-    margin-left: 20px;
+    display: flex;
+    height: 75px;
   }
 }
 
-.form__impression__item-1,
-.form__impression__item-2,
-.form__impression__item-3 {
-
-   input{
-     display: flex;
-     opacity: 0;
-   }
-
-   label {
-
-     &::before {
-       content: url("../img/Shape 2 copy 19.png");
-       position: relative;
-       right: 15px;
-       top: 20px;
-     }
-   }
+.visually-hidden {
+  appearance: none;
+  outline: none;
 }
 
-.form__impression__item-1,
-.form__impression__item-2,
-.form__impression__item-3 {
+.form__impression__item__label {
+  position: relative;
+  padding-left: 70px;
+  padding-top: 32px;
 
-  input:checked+label::before {
+  &::before {
+    content: url("../img/Shape 2 copy 19.png");
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 15px;
+  }
+
+  &::after {
     content: url("../img/Shape 2 copy 17.png");
-
+    position: absolute;
+    display: block;
+    left: 17.5px;
+    top: 32px;
+    opacity: 0;
   }
+}
+
+.visually-hidden:checked+.form__impression__item__label::after {
+  opacity: 1;
 }
