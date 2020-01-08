@@ -1,0 +1,65 @@
+.form__attraction {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 44px;
+  margin-bottom: 24px;
+
+  &__title {
+  font-family: "ptsans",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  .form__attraction__item {
+    font-family: "ptsans",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: inherit;
+  }
+}
+
+.form__attraction__item {
+
+  li {
+    display: flex;
+    height: 75px;
+  }
+
+  .visually-hidden {
+    appearance: none;
+    outline: none;
+  }
+
+  .form__attraction__item__label {
+    position: relative;
+    padding-left: 90px;
+    padding-top: 26px;
+
+
+    &::before {
+      content: url("../img/Layer 28 copy 5.png");
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 15px;
+
+   }
+
+   &::after {
+     content: url("../img/tick.svg.png");
+     position: absolute;
+     display: block;
+     left: 16px;
+     top: 32px;
+     opacity: 0;
+   }
+  }
+}
+
+.visually-hidden:checked+.form__attraction__item__label::after {
+  opacity: 1;
+}

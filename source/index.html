@@ -5,15 +5,13 @@
 <head>
 	<title>sedona</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/untitled.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8" />
 	<style type="text/css"></style>
 </head>
 <body class="page-index">
 	<header class="header">
 		<nav class="nav">
-			<a href="#" class="nav__logo"><img src="img/logotyle-mobile.svg.png" width="102" height="83" alt="логотип"></a>
-			<button class="nav__menu-button"><span></span></button>
 			<ul class="nav-item">
 				<li>
 					<a href="" class="nav-item__home">ГЛАВНАЯ</a>
@@ -27,6 +25,8 @@
 				<li>
 					<a href="https://htmlacademy.ru/" class="nav-item__hyml">HTML ACADEMY</a>
 				</li>
+				<a href="#" class="nav__logo"><img src="img/logotyle-mobile.svg.png" width="102" height="83" alt="логотип"></a>
+				<button class="nav__menu-button"><span></span></button>
 			</ul>
 		</nav>
 		<div class="header__background">
@@ -35,16 +35,21 @@
 	</header>
 	<main>
 		<section class="adventages">
+			<div class="centering">
 			<div class="adventages__item">
 				<h1 class="adventages__title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
 				<p class="adventages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
-			<div class="adventages__item">
-				<h3 class="adventages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+		  </div>
+			<div class="adventages__item-1">
+			<div class="wrapper">
+				<h2 class="adventages__title">НАСТОЯЩИЙ ГОРОДОК</h2>
 				<p class="adventages__number">-№1-</p>
 				<p class="adventages__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+			</div>
 				<img src="img/photo-city@1x.png" class="adventages__picture">
 				<ul class="adventages__list">
+					<div class="wrapper">
 					<li class="adventages__list__item-1">
 						<h3 class="adventages__list__title">ЖИЛЬЕ</h3>
 						<p class="adventages__list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -56,16 +61,20 @@
 					<li class="adventages__list__item-3">
 						<h3 class="adventages__list__title">ЕДА</h3>
 						<p class="adventages__list__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+					</div>
 					</li>
 				</ul>
 			</div>
-			<div class="adventages__item">
+			<div class="adventages__item-2">
+				<div class="wrapper">
 				<h2 class="adventages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
 				<p class="adventages__number">-№2-</p>
 				<p class="adventages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-				<img src="img/photo-bridge@1x.png" class="adventages-3__picture">
+			  </div>
+				<img src="img/photo-bridge@1x.png" class="adventages__picture">
 			</div>
-			<div class="adventages__item">
+			<div class="adventages__item-3">
+				<div class="wrapper">
 				<ul class="adventages__list">
 					<li class="adventages__list__item-1">
 						<h2 class="adventages__list__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
@@ -95,17 +104,22 @@
 						<p class="adventages__list__text">Большинство едет в гранд каньон и толпится там</p>
 					</li>
 				</ul>
+			 </div>
 			</div>
 			<div class="to-book">
-				<h2 class="to-book__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+				<div class="wrapper">
+				<h3 class="to-book__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
 				<p class="to-book__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<button class="to-book__button">НАЙТИ гостиницу</button>
+			  </div>
+			</div>
+			<div class="map">
+				<img src="img/map-mobile.jpg.png" class="map__img">
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
-		<img src="img/map-mobile.jpg.png" class="footer__img">
-		<a><h3 class="footer__title">#VISITSEDONA</h3></a>
+		<a><h1 class="footer__title">#VISITSEDONA</h1></a>
 		<ul class="footer__item">
 			<li class="footer__item__twitter">
 				<a href="#">twitter</a>
@@ -119,7 +133,7 @@
 		</ul>
 		<span class="footer__developed">
 			<a href="https://htmlacademy.ru/">
-				<p class="footer__text">РАЗРАБОТАНО<img src="img/htmlacademy.svg.png" class="footer__logo" width="27" height="34"></p>
+				<p class="footer__text">РАЗРАБОТАНО</p>
 			</a>
 		</span>
 	</footer>

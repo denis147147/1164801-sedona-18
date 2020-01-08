@@ -1,0 +1,82 @@
+.footer__title {
+  font-family: "ptsans",Arial,sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 31px;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+
+  li {
+	   width: 46px;
+	   height: 48px;
+	   background-color: #81b3d2;
+     margin: 3px;
+
+     &:hover {
+       background-color: #669ec0;
+     }
+
+     &:active {
+       background-color: #5496bd;
+     }
+  }
+
+  &__twitter {
+    content: url("../img/icon-twitter.svg.png");
+    width: 18px;
+    height: 14px;
+    object-fit: none;
+
+    a {
+      opacity: 0;
+    }
+  }
+
+  &__facebook {
+    content: url("../img/icon-facebook.svg.png");
+    width: 9px;
+    height: 18px;
+    object-fit: none;
+
+    a {
+      opacity: 0;
+    }
+  }
+
+  &__youtube {
+    content: url("../img/icon-youtube.svg.png");
+    width: 20px;
+    height: 14px;
+    object-fit: none;
+
+    a {
+      opacity: 0;
+    }
+  }
+}
+
+.footer__developed {
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-family: "ptsans",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight:400;
+    margin-top: 37px;
+
+    &::after {
+      content: url("../img/htmlacademy.svg.png");
+      position: relative;
+      top: 13px;
+      left: 11px;
+    }
+  }
+}
