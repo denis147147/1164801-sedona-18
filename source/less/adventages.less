@@ -156,6 +156,17 @@
       padding-top: 20px;
     }
 
+    span {
+      font-family: "PT Sans",Arial,sans-serif;
+  	  font-size: 14px;
+  	  line-height: 21px;
+  	  text-transform: uppercase;
+  	  font-weight: 400;
+      padding-left: 145px;
+      margin: 0 auto;
+      color: #333333;
+    }
+
     p {
       font-family: "PT Sans",Arial,sans-serif;
   	  font-size: 14px;
@@ -164,22 +175,14 @@
   	  font-weight: 400;
       text-align: center;
       margin: 0 auto;
+      padding-top: 20px;
       color: #333333;
+      border-bottom: 1px solid #d6d6d6;
+      padding-bottom: 30px;
     }
 
     .adventages__list__text {
       padding-top: 20px;
-    }
-
-    .adventages__list__item-9 {
-      padding-bottom: 20px;
-    }
-
-    .adventages__list__item-3,
-    .adventages__list__item-6 {
-      border-bottom: 1px solid #d6d6d6;
-      padding-bottom: 30px;
-
     }
   }
 
@@ -217,6 +220,7 @@
   	  background-color: #81b3d2;
   	  color: #ffffff;
   	  margin-top: 30px;
+      margin-left: 20px;
   	  outline: none;
 
       &:hover {
@@ -231,6 +235,7 @@
   }
 
   .map__img {
+    content: url("../img/bg-map-mobile@1x.jpg");
     width: 320px;
     height: 350px;
     object-fit: contain;
@@ -259,31 +264,223 @@
     .adventages__item-1 {
       display: flex;
       flex-wrap: wrap;
-      width: 786px;
+      width: 768px;
+      height: 256px;
+      margin-top: 55px;
+      background: linear-gradient( to bottom, #81b3d2 100%, #ffffff 100%);
 
       &::before {
         display: none;
       }
 
+      .number1 {
+        margin-left: 57px;
+        width: 162px;
+
+      }
+
       .adventages__title {
-        font-family: "PT Sans",Arial,sans-serif;
     	  font-size: 21px;
-    	  line-height: 26px;
-    	  text-transform: uppercase;
-    	  text-align: left;
-    	  font-weight: 700;
-    	  color: #ffffff;
       }
 
       .adventages__picture {
         content: url("../img/main-city-tablet@1x.jpg");
         width: 512px;
         height: 256px;
-
       }
 
       .adventages__list {
 
+        .adventages__list__item-1 {
+
+          h3::before {
+            content: url("../img/icon-house.svg");
+          }
+        }
+
+        .adventages__list__item-2 {
+
+          h3::before {
+            content: url("../img/icon-gift.svg");
+          }
+        }
+        .adventages__list__item-3 {
+
+          h3::before {
+            content: url("../img/icon-burger.svg");
+          }
+        }
+
       }
   }
+
+  .adventages__item-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 768px;
+    height: 256px;
+    margin-top: 300px;
+    background: linear-gradient( to bottom, #81b3d2 100%, #ffffff 100%);
+
+    .number2 {
+      width: 149px;
+      margin-right: 53px;
+    }
+
+    .adventages__title {
+      font-size: 21px;
+    }
+
+    .adventages__picture {
+      content: url("../img/main-bridge-tablet@1x.jpg");
+      width: 512px;
+      height: 256px;
+      margin-right: auto;
+    }
+  }
+
+  .adventages__item-3 {
+    height: 256px;
+    width: 768px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 21px;
+    }
+
+    span {
+      padding-left: 60px;
+    }
+
+    li {
+      width: 153px;
+      height: 256px;
+    }
+
+    p {
+      border-bottom: none;
+    }
+
+    .adventages__list {
+      display: flex;
+      width: 650px;
+      justify-content: space-between;
+    }
+  }
+
+  .to-book {
+    width: 768px;
+    display: flex;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      line-height: 26px;
+      width: 480px;
+    }
+
+    button {
+      width: 458px;
+    }
+  }
+
+  .map__img {
+    content: url("../img/bg-map-tablet@1x.jpg");
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .adventages {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .adventages__item-1 {
+
+    width: 1200px;
+    margin: 0 auto;
+
+    .adventages__picture {
+      content: url("../img/main-city-desktop@1x.jpg");
+      width: 800px;
+      height: 256px;
+    }
+
+    .number1 {
+      margin-left: 50px;
+      width: 300px;
+
+      .adventages__title {
+        width: 162px;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .adventages__item-2 {
+
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 330px;
+
+    .adventages__picture {
+      content: url("../img/main-bridge-desktop@1x.jpg");
+      width: 800px;
+      height: 256px;
+    }
+
+    .number2 {
+      margin-right: 80px;
+      width: 230px;
+
+      .adventages__title {
+        width: 149px;
+        margin-left: 42px;
+      }
+    }
+  }
+
+  .adventages__item-3 {
+    height: 256px;
+    width: 1200px;
+    margin: 0 auto;
+
+    .adventages__list {
+      display: flex;
+      width: 1200px;
+      justify-content: space-around;
+    }
+
+    li {
+      width: 299px;
+      height: 256px;
+
+      h2 {
+        width: 149px;
+        padding-left: 70px;
+      }
+
+      span {
+        padding-left: 127px;
+      }
+    }
+  }
+
+  .to-book {
+    width: 1280px;
+}
+
+.map__img {
+  content: url("../img/bg-map-desktop@1x.jpg");
+  width: 1280px;
+  height: 350px;
+}
+
+
+
 }
