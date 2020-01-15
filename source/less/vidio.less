@@ -8,7 +8,6 @@
     text-align: center;
     text-transform: uppercase;
 	  font-weight: 700;
-    width: 320px;
     margin: 0 auto;
   }
 
@@ -20,5 +19,58 @@
     text-transform: uppercase;
 	  font-weight: 400;
     padding: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+
+  .vidio {
+    width: 320px;
+    margin: 0 auto;
+
+    &__vidio {
+      width: 320px;
+      height: 190px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .vidio {
+    width: 648px;
+    margin: 0 auto;
+    margin-top: 69px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      width: 442px;
+      margin-left: 85px;
+    }
+
+    &__vidio {
+      width: 648px;
+      height: 500px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .vidio {
+    width: 800px;
+    margin: 0 auto;
+
+    &__vidio {
+      width: 800px;
+      height: 500px;
+    }
+
+    &__text {
+      margin-left: 160px;
+    }
   }
 }
