@@ -28,11 +28,7 @@ padding: 23px 20px;
   &__like {
       border: none;
       outline: none;
-
-    span {
-      content: url("../img/icon-like.svg");
-      opacity: 0.3;
-    }
+      padding: 0;
   }
 
   &__likes {
@@ -41,6 +37,14 @@ padding: 23px 20px;
   	line-height: 24px;
 	  text-transform: none;
 	  font-weight: 700;
+
+    &::before {
+      content: url("../img/icon-like.svg");
+      opacity: 0.3;
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+    }
   }
 }
 
@@ -89,17 +93,10 @@ padding: 23px 20px;
         padding-left: 20px;
       }
 
-      &__like {
-        background-color: transparent;
-        position: relative;
-        left: 564px;
-        bottom: 40px;
-      }
-
       &__likes {
         position: relative;
         left: 564px;
-        bottom: 43px;
+        bottom: 37px;
       }
    }
 
@@ -127,17 +124,10 @@ padding: 23px 20px;
        padding-left: 20px;
      }
 
-     &__like {
-       background-color: transparent;
-       position: relative;
-       left: 239px;
-       bottom: 40px;
-     }
-
      &__likes {
        position: relative;
        left: 239px;
-       bottom: 43px;
+       bottom: 37px;
      }
    }
 
@@ -165,17 +155,10 @@ padding: 23px 20px;
        padding-left: 20px;
      }
 
-     &__like {
-       background-color: transparent;
-       position: relative;
-       left: 239px;
-       bottom: 40px;
-     }
-
      &__likes {
        position: relative;
        left: 239px;
-       bottom: 43px;
+       bottom: 37px;
      }
    }
 
@@ -202,17 +185,10 @@ padding: 23px 20px;
        padding-left: 20px;
      }
 
-     &__like {
-       background-color: transparent;
-       position: relative;
-       left: 239px;
-       bottom: 40px;
-     }
-
      &__likes {
        position: relative;
        left: 239px;
-       bottom: 43px;
+       bottom: 37px;
      }
    }
   }
@@ -236,7 +212,7 @@ padding: 23px 20px;
     .signature-like {
       color: #ffffff;
       position: relative;
-      left: 315px;
+      left: 300px;
     }
 
     .text {
@@ -255,7 +231,14 @@ padding: 23px 20px;
       }
 
       .signature-like {
-        left: 1115px;
+        left: 1100px;
+      }
+
+      &__likes {
+        &::before {
+          content: url("../img/icon-like-white.svg");
+          opacity: 1;
+        }
       }
     }
 
@@ -266,6 +249,13 @@ padding: 23px 20px;
         img {
           content: url("../img/photo-cactus-desktop@1x.jpg");
         }
+
+        &__likes {
+          &::before {
+            content: url("../img/icon-like-white.svg");
+            opacity: 1;
+          }
+        }
       }
 
       .post-3 {
@@ -275,6 +265,13 @@ padding: 23px 20px;
         img {
           content: url("../img/photo-roads-desktop@1x.jpg");
         }
+
+        &__likes {
+          &::before {
+            content: url("../img/icon-like-white.svg");
+            opacity: 1;
+          }
+        }
     }
 
     .post-4 {
@@ -283,6 +280,13 @@ padding: 23px 20px;
 
       img {
         content: url("../img/photo-bridge-desktop@1x.jpg");
+      }
+
+      &__likes {
+        &::before {
+          content: url("../img/icon-like-white.svg");
+          opacity: 1;
+        }
       }
     }
   }

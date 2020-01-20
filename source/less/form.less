@@ -56,6 +56,7 @@
       font-weight: 400;
       text-align: left;
       align-self: center;
+      padding-top: 25px;
     }
 
     input {
@@ -370,8 +371,321 @@
 
 @media (min-width: 320px) {
 
-  .form {
-    width: 280px;
+  .page-form {
+    width: 320px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .page-form {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .review {
+    border-bottom: none;
+
+    &__title {
+      font-size: 30px;
+      margin-top: 78px;
+    }
+
+    &__text {
+      width: 442px;
+      margin-left: 161px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0;
+    margin: 0;
+
+    .form__name {
+      order: 2;
+      width: 267px;
+      border-bottom: none;
+      padding: 0;
+      margin-left: 40px;
+
+      &__title {
+        font-size: 21px;
+        text-align: left;
+      }
+
+      ul {
+        margin-top: 60px;
+      }
+    }
+
+    .form__contacts {
+      width: 648px;
+      order: 3;
+      border-bottom: none;
+      margin-left: 40px;
+      border-top: 1px solid #eeeeee;
+      padding: 0;
+      margin: 0 auto;
+
+      &__title {
+        font-size: 21px;
+      }
+
+      input {
+        padding: 0;
+        width: 648px;
+        background-position: 610px;
+      }
+    }
+
+    .form__impression {
+      order: 1;
+      width: 328px;
+      border-bottom: none;
+      padding: 0;
+      margin-left: 60px;
+
+      &__title {
+        font-size: 21px;
+      }
+
+      ul {
+        margin-top: 50px;
+      }
+
+      li {
+        width: 290px;
+      }
+    }
+
+    .form__attraction {
+      order: 4;
+      border-bottom: none;
+
+      &__title {
+        font-size: 21px;
+      }
+    }
+
+    .form__comment {
+      order: 5;
+
+      &__title {
+        font-size: 21px;
+      }
+    }
+
+    .form__button {
+      order: 6;
+    }
+  }
+
+  .form__attraction {
+    border-top: 1px solid #eeeeee;
+    margin-left: 40px;
+    width: 648px;
+    margin-top: 60px;
+
+    &__title {
+      font-size: 21px;
+      width: 277px;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: space-between;
+      width: 466px;
+      margin-top: 30px;
+
+      li {
+        width: 230px;
+      }
+    }
+  }
+
+  .form__comment {
+    border-top: 1px solid #eeeeee;
+    margin-left: 40px;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 0;
+
+    &__title {
+      font-size: 21px;
+      margin: 0;
+      text-align: center;
+    }
+
+    &__input {
+      width: 648px;
+      margin-top: 60px;
+    }
+  }
+
+  .form__button {
+    margin-left: 40px;
+    width: 327px;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .page-form {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .review__text {
+    margin-left: 378px;
+  }
+
+  .form {
+    width: 960px;
+    margin: 0 auto;
+
+    .form__name {
+      padding: 0;
+      margin: 0;
+      width: 400px;
+      margin-left: 159px;
+
+      &__item-1 {
+       margin: 0;
+       width: 400px;
+
+       input {
+         padding: 0;
+         margin-left: 12px;
+         width: 350px;
+       }
+    }
+
+      &__item-2 {
+       margin: 0;
+       width: 400px;
+
+       input {
+         padding: 0;
+         margin-left: 12px;
+         width: 312px;
+       }
+    }
+
+      &__item-3 {
+       margin: 0;
+       width: 400px;
+
+       input {
+         padding: 0;
+         margin-left: 17px;
+         width: 312px;
+       }
+    }
+}
+
+    .form__impression {
+      width: 400px;
+      margin: 0;
+
+      &__title {
+        text-align: left;
+      }
+    }
+
+    .form__contacts {
+      margin-top: 55px;
+      width: 1200px;
+
+      .form__contacts__item {
+        display: flex;
+      }
+
+      &__item-1 {
+        margin-top: 80px;
+        width: 460px;
+        display: flex;
+
+        label {
+          padding: 0;
+          padding-right: 10px;
+          padding-top: 30px;
+          width: 80px;
+
+          span {
+            display: none;
+          }
+        }
+
+        input {
+          width: 315px;
+          background-position: 278px;
+        }
+      }
+
+      &__item-2 {
+        margin-top: 80px;
+
+        width: 500px;
+        display: flex;
+
+        label {
+          padding: 0;
+          padding-right: 10px;
+          padding-top: 30px;
+          width: 176px;
+        }
+
+        input {
+          width: 315px;
+          background-position: 279px;
+        }
+      }
+    }
+
+
+    .form__attraction {
+      width: 960px;
+      padding: 0;
+      margin: 0;
+      margin-top: 60px;
+
+      .form__attraction__item {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 960px;
+
+        li {
+          width: 260px;
+        }
+      }
+    }
+
+    .form__comment {
+      width: 960px;
+      padding: 0;
+      margin: 0;
+      margin-top: 60px;
+
+      &__input {
+        width: 960px;
+        margin-top: 60px;
+      }
+    }
+
+    .form__button {
+      width: 480px;
+      padding: 0;
+      margin: 0;
+      margin-top: 60px;
+    }
+
+
   }
 }

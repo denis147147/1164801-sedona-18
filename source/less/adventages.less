@@ -290,28 +290,71 @@
       }
 
       .adventages__list {
+        display: flex;
+        justify-content: space-between;
+        width: 768px;
+        height: 330px;
+        padding: 0;
+        margin: 0;
+        margin-top: 70px;
+
+        h3 {
+          font-size: 21px;
+          padding:0;
+          margin: 0;
+          margin: 0 auto;
+          text-align: center;
+          width: 100px;
+          margin-bottom: 30px;
+        }
+
+        p{
+          text-align: center;
+          padding:0;
+          margin: 0;
+          width: 170px;
+          margin: 0 auto;
+        }
+
+        li {
+          width: 256px;
+        }
 
         .adventages__list__item-1 {
 
+          order: 1;
+
           h3::before {
             content: url("../img/icon-house.svg");
+            position: relative;
+            left: 0px;
+            top: -33px;
           }
         }
 
         .adventages__list__item-2 {
 
+          order: 3;
+
           h3::before {
             content: url("../img/icon-gift.svg");
+            position: relative;
+            left: 0px;
+            top: -33px;
           }
         }
         .adventages__list__item-3 {
 
+          order: 2;
+
           h3::before {
             content: url("../img/icon-burger.svg");
+            position: relative;
+            left: 0px;
+            top: -33px;
           }
-        }
-
       }
+    }
   }
 
   .adventages__item-2 {
@@ -397,7 +440,7 @@
 
   .adventages {
     width: 1280px;
-    margin: 0 auto;   
+    margin: 0 auto;
   }
 
   .adventages__item-1 {
@@ -418,6 +461,19 @@
       .adventages__title {
         width: 162px;
         margin-left: 70px;
+      }
+    }
+
+    .adventages__list {
+      width: 1280px;
+      justify-content: space-around;
+
+      li {
+        width: 400px;
+      }
+
+      p {
+        width: 290px;
       }
     }
   }
@@ -480,7 +536,4 @@
   width: 1280px;
   height: 350px;
 }
-
-
-
 }
