@@ -60,6 +60,7 @@
 
   .adventages__list {
 
+
     h3 {
       font-family: "PT Sans",Arial,sans-serif;
   	  font-size: 18px;
@@ -259,6 +260,7 @@
 
     .adventages__item {
       width: 500px;
+      margin-bottom: 55px;
     }
 
     .adventages__item-1 {
@@ -266,7 +268,6 @@
       flex-wrap: wrap;
       width: 768px;
       height: 256px;
-      margin-top: 55px;
       background: linear-gradient( to bottom, #81b3d2 100%, #ffffff 100%);
 
       &::before {
@@ -287,6 +288,7 @@
         content: url("../img/main-city-tablet@1x.jpg");
         width: 512px;
         height: 256px;
+        margin-left: auto;
       }
 
       .adventages__list {
@@ -296,7 +298,6 @@
         height: 330px;
         padding: 0;
         margin: 0;
-        margin-top: 70px;
 
         h3 {
           font-size: 21px;
@@ -306,6 +307,7 @@
           text-align: center;
           width: 100px;
           margin-bottom: 30px;
+          margin-top: 85px;
         }
 
         p{
@@ -314,6 +316,7 @@
           margin: 0;
           width: 170px;
           margin: 0 auto;
+          margin-bottom: 85px;
         }
 
         li {
@@ -406,8 +409,8 @@
 
     .adventages__list {
       display: flex;
-      width: 650px;
-      justify-content: space-between;
+      width: 768px;
+      justify-content: space-around;
     }
   }
 
@@ -427,6 +430,10 @@
     button {
       width: 458px;
     }
+
+    .wrapper {
+      margin: 0 auto;
+    }
   }
 
   .map__img {
@@ -439,7 +446,7 @@
 @media (min-width: 1280px) {
 
   .adventages {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
   }
 
@@ -449,7 +456,7 @@
     margin: 0 auto;
 
     .adventages__picture {
-      content: url("../img/main-city-desktop@1x.jpg");
+      content: url("../img/photo-city@1x.jpg");
       width: 800px;
       height: 256px;
     }
@@ -485,7 +492,7 @@
     margin-top: 330px;
 
     .adventages__picture {
-      content: url("../img/main-bridge-desktop@1x.jpg");
+      content: url("../img/photo-bridge@1x.jpg");
       width: 800px;
       height: 256px;
     }
@@ -528,12 +535,16 @@
   }
 
   .to-book {
-    width: 1280px;
+    width: 1200px;
+
+    .wrapper {
+      margin: 0 auto;
+    }
 }
 
 .map__img {
   content: url("../img/bg-map-desktop@1x.jpg");
-  width: 1280px;
+  width: 1200px;
   height: 350px;
 }
 }

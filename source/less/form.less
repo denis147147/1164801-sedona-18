@@ -375,12 +375,16 @@
     width: 320px;
     margin: 0 auto;
   }
+
+  .hint {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
 
   .page-form {
-    width: 768px;
+    width: 648px;
     margin: 0 auto;
   }
 
@@ -401,21 +405,23 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
+    width: 648px;
     padding: 0;
     margin: 0;
 
     .form__name {
       order: 2;
-      width: 267px;
+      width: px;
       border-bottom: none;
       padding: 0;
-      margin-left: 40px;
+      margin-left: auto;
+
 
       &__title {
         font-size: 21px;
         text-align: left;
       }
+
 
       ul {
         margin-top: 60px;
@@ -423,16 +429,20 @@
     }
 
     .form__contacts {
-      width: 648px;
+      width: 768px;
       order: 3;
       border-bottom: none;
-      margin-left: 40px;
       border-top: 1px solid #eeeeee;
       padding: 0;
       margin: 0 auto;
 
+
       &__title {
         font-size: 21px;
+        padding: 0px 60px;
+        margin: 0 auto;
+
+
       }
 
       input {
@@ -444,10 +454,10 @@
 
     .form__impression {
       order: 1;
-      width: 328px;
+      width: ;
       border-bottom: none;
       padding: 0;
-      margin-left: 60px;
+      margin-left: ;
 
       &__title {
         font-size: 21px;
@@ -468,14 +478,24 @@
 
       &__title {
         font-size: 21px;
+        padding: 0px 60px;
+        margin: 0 auto;
       }
     }
 
     .form__comment {
       order: 5;
+      margin: 0;
 
       &__title {
         font-size: 21px;
+        padding: 0px 60px;
+        margin: 0 auto;
+      }
+
+      &__input {
+        margin: 0;
+        margin-top: 60px;
       }
     }
 
@@ -486,7 +506,6 @@
 
   .form__attraction {
     border-top: 1px solid #eeeeee;
-    margin-left: 40px;
     width: 648px;
     margin-top: 60px;
 
@@ -530,20 +549,34 @@
   }
 
   .form__button {
-    margin-left: 40px;
+    margin: inherit;
+    margin-top: 60px;
     width: 327px;
+  }
+
+  .hint {
+    display: block;
+    font-family: "ptsans",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: right;
+    margin-left:auto;
+    margin-top: -43px;
   }
 }
 
 @media (min-width: 1280px) {
 
   .page-form {
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
   }
 
   .review__text {
-    margin-left: 378px;
+    margin: auto;
   }
 
   .form {
@@ -675,6 +708,7 @@
 
       &__input {
         width: 960px;
+        padding: 0;
         margin-top: 60px;
       }
     }
