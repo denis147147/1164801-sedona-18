@@ -5,11 +5,12 @@
 	<title>sedona</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8" />
 	<style type="text/css"></style>
 </head>
 
-<body>
+<body class="page-form-wrapper">
 	<header class="header">
 		<nav class="nav">
 			<ul class="nav-item">
@@ -25,12 +26,12 @@
 				<li>
 					<a href="https://htmlacademy.ru/" class="nav-item__hyml">HTML ACADEMY</a>
 				</li>
-				<a href="#" class="nav__logo"><img src="img/logotyle-mobile.svg.png" width="102" height="83" alt="логотип"></a>
+				<a href="#" class="nav__logo"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип"></a>
 				<button class="nav__menu-button"><span></span></button>
 			</ul>
 		</nav>
 		<div class="header__background-form">
-			<img src="img/SEDONA.png" class="header__text-index" width="229" height="39">
+			<img src="img/text-sedona.svg" class="header__text-index" width="229" height="39">
 		</div>
 	</header>
 	<main class="page-form">
@@ -38,7 +39,7 @@
 			<h1 class="review__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
 			<p class="review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТОВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
 		</div>
-		<form method="get" action="https://echo.htmlacademy.ru" class="form">
+		<form method="get" action="https://echo.htmlacademy.ru" class="form" class="form">
 			<fieldset class="form__name">
 				<legend class="form__name__title">ПрЕДСТАВТЕСЬ:</legend>
 				<ul class="form__name__item">
@@ -60,7 +61,7 @@
 				<legend class="form__contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
 				<ul class="form__contacts__item">
 					<li class="form__contacts__item-1">
-						<label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*;</label>
+						<label for="phone"><span>КОНТАКТНЫЙ</span> ТЕЛЕФОН*;</label>
 						<input type="text" name="" value="" id="phone" placeholder="Введите телефон" required>
 					</li>
 					<li class="form__contacts__item-2">
@@ -113,6 +114,7 @@
 			</fieldset>
 			<button type="submit" name="review" class="form__button">ОТПРАВИТЬ ОТЗЫВ</button>
 		</form>
+		<span class="hint">* — обязательные поля</span>
 	</main>
 	<footer class="footer">
 		<a><h3 class="footer__title">#VISITSEDONA</h3></a>

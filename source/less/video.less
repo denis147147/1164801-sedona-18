@@ -1,0 +1,202 @@
+.video {
+  padding-top: 39px;
+
+  &__title {
+    font-family: "PT Sans",Arial,sans-serif;
+	  font-size: 18px;
+	  line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+	  font-weight: 700;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-family: "PT Sans",Arial,sans-serif;
+	  font-size: 14px;
+	  line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+	  font-weight: 400;
+    padding: 20px;
+  }
+
+  &__video {
+    background-image: url("../img/video-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 190px;
+  }
+
+  .video-menu {
+    width: 240px;
+    height: 82px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.6); 50%, #f2f2f2 50%);
+    margin-left: 10px;
+    margin-top: 140px;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .video-controls {
+      height: 3px;
+      background-color: #ffffff;
+      opacity: 0.6;
+      }
+
+      .toggle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: relative;
+        top: -6px;
+        left: 50px;
+        cursor: pointer;
+
+        .toggle-min {
+          left: 20px;
+        }
+
+        .toggle-max {
+          left: 255px;
+        }
+    }
+
+    .bar {
+
+      .replay {
+        position: relative;
+        top: 30px;
+        left: -5px;
+      }
+
+      .subtitles {
+        position: relative;
+        top: 30px;
+        left: 130px;
+      }
+
+      .fullcreen {
+        position: relative;
+        top: 30px;
+        left: 130px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+
+  .video {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .video {
+    width: 648px;
+    margin: 0 auto;
+
+    &__title {
+      font-size: 30px;
+      margin-top: 60px;
+    }
+
+    &__text {
+      width: 442px;
+      margin-left: 85px;
+      margin-bottom: 60px;
+    }
+
+    &__video {
+      background-image: url("../img/video-tablet@1x.jpg");
+      width: 648px;
+      height: 500px;
+    }
+
+    .video-menu {
+      width: 387px;
+      height: 43px;
+      background: rgba(0, 0, 0, 0.6);
+      margin-left: -12px;
+      margin-top: 410px;
+      padding-top: 40px;
+      padding-left: 96px;
+      padding-right: 165px;
+
+      .bar {
+
+        .replay {
+          position: relative;
+          top: -20px;
+          left: -60px;
+        }
+
+        .subtitles {
+          position: relative;
+          top: -20px;
+          left: 410px;
+        }
+
+        .fullcreen {
+          position: relative;
+          top: -20px;
+          left: 460px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .video {
+    width: 800px;
+    margin: 0 auto;
+
+    &__video {
+      background-image: url("../img/video-desktop@1x.jpg");
+      width: 800px;
+      height: 500px;
+    }
+
+    &__text {
+      margin-left: 160px;
+    }
+
+    .video-menu {
+      width: 539px;
+      height: 43px;
+      background: rgba(0, 0, 0, 0.6);
+      margin-left: -12px;
+      margin-top: 411px;
+      padding-top: 40px;
+      padding-left: 96px;
+      padding-right: 165px;
+
+      .bar {
+
+        .replay {
+          position: relative;
+          top: -20px;
+          left: -60px;
+        }
+
+        .subtitles {
+          position: relative;
+          top: -20px;
+          left: 560px;
+        }
+
+        .fullcreen {
+          position: relative;
+          top: -20px;
+          left: 610px;
+        }
+      }
+    }
+  }
+}

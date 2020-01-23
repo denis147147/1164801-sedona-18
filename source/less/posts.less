@@ -28,22 +28,266 @@ padding: 23px 20px;
   &__like {
       border: none;
       outline: none;
-
-    span {
-      content: url("../img/icon-like.svg");
-      opacity: 0.3;
-    }
+      padding: 0;
   }
 
-  span {
+  &__likes {
     font-family: "PT Sans",Arial,sans-serif;
 	  font-size: 14px;
   	line-height: 24px;
 	  text-transform: none;
-	  font-weight: 400;
+	  font-weight: 700;
+
+    &::before {
+      content: url("../img/icon-like.svg");
+      opacity: 0.3;
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+    }
   }
 }
 
 .post-4 {
   border-bottom: 1px solid #eeeeee;
+}
+
+@media (min-width: 320px) {
+
+  .posts {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .posts {
+    width: 648px;
+    margin: 0 auto;
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .post-1{
+      margin: 0 auto;
+      padding: 0;
+      background-color: #f2f2f2;
+
+
+      img {
+      content: url("../img/photo-sunset-tablet@1x.jpg");
+      border-top: none;
+    }
+
+      &__title {
+        padding: 0;
+        margin: 0;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+
+      &__text {
+        padding: 0;
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      &__likes {
+        position: relative;
+        left: 564px;
+        bottom: 37px;
+      }
+   }
+
+   .post-2 {
+     border-top: none;
+     padding: 0;
+     margin: 0;
+
+     background-color: #f2f2f2;
+
+     img {
+       content: url("../img/photo-cactus-tablet@1x.jpg");
+     }
+
+     &__title {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+       padding-top: 20px;
+     }
+
+     &__text {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+     }
+
+     &__likes {
+       position: relative;
+       left: 239px;
+       bottom: 37px;
+     }
+   }
+
+   .post-3 {
+     border-top: none;
+     padding: 0;
+     margin: 0;
+
+     background-color: #eaeaea;
+
+     img {
+       content: url("../img/photo-roads-tablet@1x.jpg");
+     }
+
+     &__title {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+       padding-top: 20px;
+     }
+
+     &__text {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+     }
+
+     &__likes {
+       position: relative;
+       left: 239px;
+       bottom: 37px;
+     }
+   }
+
+   .post-4 {
+     border-top: none;
+     padding: 0;
+     margin: 0;
+     background-color: #f2f2f2;
+
+     img {
+       content: url("../img/photo-bridge-tablet@1x.jpg");
+     }
+
+     &__title {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+       padding-top: 20px;
+     }
+
+     &__text {
+       padding: 0;
+       margin: 0;
+       padding-left: 20px;
+     }
+
+     &__likes {
+       position: relative;
+       left: 239px;
+       bottom: 37px;
+     }
+   }
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .posts {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .signature {
+      color: #ffffff;
+      position: relative;
+
+    }
+
+    .signature-like {
+      color: #ffffff;
+      position: relative;
+      left: 300px;
+    }
+
+    .text {
+      position: relative;
+      top: -84px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .post-1 {
+
+      height: 400px;
+
+      img {
+        content: url("../img/photo-sunset-desktop@1x.jpg");
+      }
+
+      .signature-like {
+        left: 1100px;
+      }
+
+      &__likes {
+        &::before {
+          content: url("../img/icon-like-white.svg");
+          opacity: 1;
+        }
+      }
+    }
+
+      .post-2 {
+
+        height: 267px;
+
+        img {
+          content: url("../img/photo-cactus-desktop@1x.jpg");
+        }
+
+        &__likes {
+          &::before {
+            content: url("../img/icon-like-white.svg");
+            opacity: 1;
+          }
+        }
+      }
+
+      .post-3 {
+
+        height: 267px;
+
+        img {
+          content: url("../img/photo-roads-desktop@1x.jpg");
+        }
+
+        &__likes {
+          &::before {
+            content: url("../img/icon-like-white.svg");
+            opacity: 1;
+          }
+        }
+    }
+
+    .post-4 {
+
+      height: 267px;
+
+      img {
+        content: url("../img/photo-bridge-desktop@1x.jpg");
+      }
+
+      &__likes {
+        &::before {
+          content: url("../img/icon-like-white.svg");
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
