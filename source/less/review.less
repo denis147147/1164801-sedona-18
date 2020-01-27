@@ -1,7 +1,7 @@
 .review {
 	border-bottom: 1px solid #eeeeee;
-	padding-bottom: 22px;
-	margin-bottom: 24px;
+	padding-top: 27px;
+	padding-bottom: 3px;
 
 	&__title {
 		font-family: "PT Sans",Arial,sans-serif;
@@ -10,7 +10,6 @@
 		font-weight: 700;
 		text-align: center;
 		text-transform: uppercase;
-		margin-top: 24px;
 	}
 
 	&__text {
@@ -19,6 +18,40 @@
 		line-height: 24px;
 		font-weight: 400;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.review {
+		border-bottom: none;
+
+		&__title {
+			font-size: 30px;
+			padding-top: 30px;
+		}
+
+		&__text {
+			width: 440px;
+			padding: 10px 100px;
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.review {
+		border-bottom: none;
+
+		&__title {
+			font-size: 30px;
+			padding-top: 63px;
+		}
+
+		&__text {
+			width: 440px;
+			padding: 10px 100px;
+		}
 	}
 }

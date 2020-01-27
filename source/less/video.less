@@ -1,5 +1,7 @@
 .video {
-	padding-top: 39px;
+	padding-top: 37px;
+	padding-bottom: 20px;
+
 
 	&__title {
 		font-family: "PT Sans",Arial,sans-serif;
@@ -19,22 +21,24 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		padding: 20px;
+		width: 240px;
+		padding: 15px 40px;
 	}
 
 	&__video {
 		background-image: url("../img/video-mobile@1x.jpg");
 		background-repeat: no-repeat;
-		width: 320px;
-		height: 190px;
+		padding: 0;
+		margin: 0;
+		padding-top: 157px;
 	}
 
 	.video-menu {
 		width: 240px;
-		height: 82px;
-		background: linear-gradient( to bottom, rgba(0, 0, 0, 0.6); 50%, #f2f2f2 50%);
-		margin-left: 10px;
-		margin-top: 140px;
-		padding-top: 28px;
+		height: 111px;
+		background: linear-gradient( to bottom, rgba(0, 0, 0, 0.6); 34%, #f2f2f2 34%);
+		margin-left: 20px;
+		padding-top: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
 
@@ -66,21 +70,30 @@
 		.bar {
 
 			.replay {
+				border: none;
+				outline: none;
+				background: transparent;
 				position: relative;
 				top: 30px;
-				left: -5px;
+				left: -4px;
 			}
 
 			.subtitles {
+				border: none;
+				outline: none;
+				background: transparent;
 				position: relative;
-				top: 30px;
-				left: 130px;
+				top: 33px;
+				left: 113px;
 			}
 
 			.fullcreen {
+				border: none;
+				outline: none;
+				background: transparent;
 				position: relative;
-				top: 30px;
-				left: 130px;
+				top: 33px;
+				left: 126px;
 			}
 		}
 	}
@@ -102,49 +115,52 @@
 
 		&__title {
 			font-size: 30px;
-			margin-top: 60px;
+			margin-top: 25px;
 		}
 
 		&__text {
 			width: 442px;
-			margin-left: 85px;
-			margin-bottom: 60px;
+			margin-left: 60px;
+			margin-bottom: 62px;
 		}
 
 		&__video {
 			background-image: url("../img/video-tablet@1x.jpg");
 			width: 648px;
-			height: 500px;
+			padding-bottom: 25px;
 		}
 
 		.video-menu {
-			width: 387px;
-			height: 43px;
+			width: 394px;
+			height: 74px;
 			background: rgba(0, 0, 0, 0.6);
-			margin-left: -12px;
-			margin-top: 410px;
-			padding-top: 40px;
-			padding-left: 96px;
-			padding-right: 165px;
+			margin: inherit;
+			padding-right: 162px;
+			padding-left: 92px;
+			margin-top: 249px;
+
+			.video-controls {
+				margin-top: 28px;
+			}
 
 			.bar {
 
 				.replay {
 					position: relative;
-					top: -20px;
-					left: -60px;
+					top: -27px;
+					left: -65px;
 				}
 
 				.subtitles {
 					position: relative;
-					top: -20px;
-					left: 410px;
+					top: -27px;
+					left: 390px;
 				}
 
 				.fullcreen {
 					position: relative;
-					top: -20px;
-					left: 460px;
+					top: -25px;
+					left: 405px;
 				}
 			}
 		}
@@ -160,41 +176,47 @@
 		&__video {
 			background-image: url("../img/video-desktop@1x.jpg");
 			width: 800px;
-			height: 500px;
+			padding-bottom: 70px;
 		}
 
 		&__text {
-			margin-left: 160px;
+			margin-left: 140px;
+			padding-top: 25px;
+			margin-bottom: 55px;
 		}
 
 		.video-menu {
 			width: 539px;
-			height: 43px;
+			height: 53px;
 			background: rgba(0, 0, 0, 0.6);
-			margin-left: -12px;
-			margin-top: 411px;
+			margin: inherit;
 			padding-top: 40px;
 			padding-left: 96px;
 			padding-right: 165px;
+			margin-top: 250px;
+
+			.video-controls {
+				margin-top: 5px;
+			}
 
 			.bar {
 
 				.replay {
 					position: relative;
-					top: -20px;
-					left: -60px;
+					top: -25px;
+					left: -70px;
 				}
 
 				.subtitles {
 					position: relative;
-					top: -20px;
-					left: 560px;
+					top: -23px;
+					left: 537px;
 				}
 
 				.fullcreen {
 					position: relative;
-					top: -20px;
-					left: 610px;
+					top: -23px;
+					left: 550px;
 				}
 			}
 		}
