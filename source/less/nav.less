@@ -35,9 +35,8 @@
 				color: #88b6d1;
 			}
 		}
-	}
 
-	img {
+	.nav__logo {
 		display: flex;
 		justify-content: center;
 		position: relative;
@@ -48,9 +47,10 @@
 .nav__menu-button {
 	width: 30px;
 	height: 10px;
-	position: relative;
+	background: #ffffff;
+    position: relative;
 	left: 271px;
-	top: -38px;
+	top: -30px;
 	border: none;
 	outline: none;
 }
@@ -82,16 +82,17 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	background-color: #ffffff;
-	background-image: url("../img/back-mobile.jpg.png");
+	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 
 	img {
-		position: relative;
-		top: 85px;
+		position: absolute;
+		padding-left: 20px;
+		padding-top: 90px;
 	}
 
 	&::after {
-		content: url("../img/intro-triangle.svg.png");
+		content: url("../img/intro-triangle.svg");
 		position: relative;
 		top: 61px;
 	}
@@ -100,7 +101,7 @@
 .header__background-foto,
 .header__background-form {
 	display: block;
-	background-image: url("../img/back-mobile-foto.png");
+	background-image: url("../img/bg-back-mobile@1x.jpg");
 	height: 159px;
 	background-repeat: no-repeat;
 	margin-top: -15px;
@@ -112,10 +113,11 @@
 	}
 
 	&::after {
-		content: url("../img/intro-triangle.svg.png");
+		content: url("../img/intro-triangle.svg");
 		position: relative;
 		top:58px;
 	}
+ }
 }
 
 
@@ -195,6 +197,9 @@
 			content: url("../img/text-sedona-index.svg");
 			width: 460px;
 			height: 350px;
+			position: absolute;
+			padding-left: 154px;
+			padding-top: 77px;
 		}
 
 		&::after {
@@ -207,7 +212,7 @@
 	.header__background-foto,
 	.header__background-form {
 		display: block;
-		background-image: url("../img/back-desktop.jpg");
+		background-image: url("../img/bg-back-tablet@1x.jpg");
 		height: 291px;
 		background-repeat: no-repeat;
 		margin: inherit;
@@ -250,6 +255,9 @@
 			content: url("../img/text-sedona-index.svg");
 			width: 460px;
 			height: 350px;
+			position: absolute;
+			padding-left: 370px;
+			padding-top: 78px;
 		}
 
 		&::after {
@@ -292,10 +300,11 @@
 			}
 
 			li {
+
 				&:nth-child(3) {
 					margin-left: 350px;
 				}
 			}
 		}
-	}
+   }
 }
