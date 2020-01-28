@@ -16,7 +16,7 @@
 					<a href="index.html" class="nav-item__home">ГЛАВНАЯ</a>
 				</li>
 				<li>
-					<a href="photo.html" class="nav-item__foto">ФОТО И ВИДИО</a>
+					<a href="photo.html" class="nav-item__foto">ФОТО И ВИДеО</a>
 				</li>
 				<li>
 					<a href="form.html" class="nav-item__form">ФОРМА ОТЗЫВА</a>
@@ -24,114 +24,120 @@
 				<li>
 					<a href="https://htmlacademy.ru/" class="nav-item__hyml">HTML ACADEMY</a>
 				</li>
-				<a href="#" class="nav__logo"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип"></a>
-				<button class="nav__menu-button"><span></span></button>
-			</ul>
-		</nav>
-		<div class="header__background-form">
-			<img src="img/text-sedona.svg" class="header__text-index" width="229" height="39">
-		</div>
-	</header>
-	<main class="page-form">
-		<div class="review">
-			<h1 class="review__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
-			<p class="review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТОВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-		</div>
-		<form method="get" action="https://echo.htmlacademy.ru" class="form" class="form">
-			<fieldset class="form__name">
-				<legend class="form__name__title">ПрЕДСТАВТЕСЬ:</legend>
-				<ul class="form__name__item">
-					<li class="form__name__item-1">
-						<label for="name">ИМЯ*;</label>
-						<input type="text" id="name" required>
+				<a class="nav__logo">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+							<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+								<img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+							</picture>
+						</a>
+						<button class="nav__menu-button"><span></span></button>
+					</ul>
+				</nav>
+				<div class="header__background-form">
+					<img src="img/text-sedona.svg" class="header__text-index" width="229" height="39">
+				</div>
+			</header>
+			<main class="page-form">
+				<div class="review">
+					<h1 class="review__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
+					<p class="review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТОВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+				</div>
+				<form method="get" action="https://echo.htmlacademy.ru" class="form" class="form">
+					<fieldset class="form__name">
+						<legend class="form__name__title">ПрЕДСТАВТЕСЬ:</legend>
+						<ul class="form__name__item">
+							<li class="form__name__item-1">
+								<label for="name">ИМЯ*:</label>
+								<input type="text" id="name" required>
+							</li>
+							<li class="form__name__item-2">
+								<label for="surname">ФАМИЛИЯ*:</label>
+								<input type="text" id="surname" required>
+							</li>
+							<li class="form__name__item-3">
+								<label for="patronymic">ОТЧЕСТВО:</label>
+								<input type="text" id="patronymic" required>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__contacts">
+						<legend class="form__contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+						<ul class="form__contacts__item">
+							<li class="form__contacts__item-1">
+								<label for="phone"><span>КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
+								<input type="text" name="" value="" id="phone" placeholder="Введите телефон" required>
+							</li>
+							<li class="form__contacts__item-2">
+								<label for="mail">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+								<input type="text" name="" value="" id="mail" placeholder="Введите e-mail" required>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__impression">
+						<legend class="form__impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+						<ul class="form__impression__item">
+							<li class="form__impression__item">
+								<input type="radio" name="assessment" value="on" id="good" class="visually-hidden">
+								<label for="good" class="form__impression__item__label">Скорее положительное</label>
+							</li>
+							<li class="form__impression__item">
+								<input type="radio" name="assessment" value="on" id="bad" class="visually-hidden">
+								<label for="bad" class="form__impression__item__label">Скорее отрицательное</label>
+							</li>
+							<li class="form__impression__item">
+								<input type="radio" name="assessment" value="on" id="maybe" class="visually-hidden">
+								<label for="maybe" class="form__impression__item__label">Затрудняюсь ответить</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__attraction">
+						<legend class="form__attraction__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+						<ul class="form__attraction__item">
+							<li class="form__attraction__item">
+								<input type="checkbox" name="sight" id="1" class="visually-hidden">
+								<label for="1" class="form__attraction__item__label">Мост Дьявола</label>
+							</li>
+							<li class="form__attraction__item">
+								<input type="checkbox" name="sight" id="2" class="visually-hidden">
+								<label for="2" class="form__attraction__item__label">Гора-Колокол</label>
+							</li>
+							<li class="form__attraction__item">
+								<input type="checkbox" name="sight" id="3" class="visually-hidden">
+								<label for="3" class="form__attraction__item__label">Слайд-парк</label>
+							</li>
+							<li class="form__attraction__item">
+								<input type="checkbox" name="sight" id="4" class="visually-hidden">
+								<label for="4" class="form__attraction__item__label">Красные скалы</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__comment">
+						<legend class="form__comment__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+						<textarea placeholder="Опишите подробно все свои восторги" name="comment" class="form__comment__input"></textarea>
+					</fieldset>
+					<button type="submit" name="review" class="form__button">ОТПРАВИТЬ ОТЗЫВ</button>
+				</form>
+				<span class="hint">* — обязательные поля</span>
+			</main>
+			<footer class="footer">
+				<a><h3 class="footer__title">#VISITSEDONA</h3></a>
+				<ul class="footer__item">
+					<li class="footer__item__twitter">
+						<a href="#">twitter</a>
 					</li>
-					<li class="form__name__item-2">
-						<label for="surname">ФАМИЛИЯ*;</label>
-						<input type="text" id="surname" required>
+					<li class="footer__item__facebook">
+						<a href="#">facebook</a>
 					</li>
-					<li class="form__name__item-3">
-						<label for="patronymic">ОТЧЕСТВО;</label>
-						<input type="text" id="patronymic" required>
+					<li class="footer__item__youtube">
+						<a href="#">youtube</a>
 					</li>
 				</ul>
-			</fieldset>
-			<fieldset class="form__contacts">
-				<legend class="form__contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-				<ul class="form__contacts__item">
-					<li class="form__contacts__item-1">
-						<label for="phone"><span>КОНТАКТНЫЙ</span> ТЕЛЕФОН*;</label>
-						<input type="text" name="" value="" id="phone" placeholder="Введите телефон" required>
-					</li>
-					<li class="form__contacts__item-2">
-						<label for="mail">ЭЛЕКТРОННАЯ ПОЧТА*;</label>
-						<input type="text" name="" value="" id="mail" placeholder="Введите e-mail" required>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="form__impression">
-				<legend class="form__impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-				<ul class="form__impression__item">
-					<li class="form__impression__item">
-						<input type="radio" name="assessment" value="on" id="good" class="visually-hidden">
-						<label for="good" class="form__impression__item__label">Скорее положительное</label>
-					</li>
-					<li class="form__impression__item">
-						<input type="radio" name="assessment" value="on" id="bad" class="visually-hidden">
-						<label for="bad" class="form__impression__item__label">Скорее отрицательное</label>
-					</li>
-					<li class="form__impression__item">
-						<input type="radio" name="assessment" value="on" id="maybe" class="visually-hidden">
-						<label for="maybe" class="form__impression__item__label">Затрудняюсь ответить</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="form__attraction">
-				<legend class="form__attraction__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-				<ul class="form__attraction__item">
-					<li class="form__attraction__item">
-						<input type="checkbox" name="sight" id="1" class="visually-hidden">
-						<label for="1" class="form__attraction__item__label">Мост Дьявола</label>
-					</li>
-					<li class="form__attraction__item">
-						<input type="checkbox" name="sight" id="2" class="visually-hidden">
-						<label for="2" class="form__attraction__item__label">Гора-Колокол</label>
-					</li>
-					<li class="form__attraction__item">
-						<input type="checkbox" name="sight" id="3" class="visually-hidden">
-						<label for="3" class="form__attraction__item__label">Слайд-парк</label>
-					</li>
-					<li class="form__attraction__item">
-						<input type="checkbox" name="sight" id="4" class="visually-hidden">
-						<label for="4" class="form__attraction__item__label">Красные скалы</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="form__comment">
-				<legend class="form__comment__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-				<textarea placeholder="Опишите подробно все свои восторги" name="comment" class="form__comment__input"></textarea>
-			</fieldset>
-			<button type="submit" name="review" class="form__button">ОТПРАВИТЬ ОТЗЫВ</button>
-		</form>
-		<span class="hint">* — обязательные поля</span>
-	</main>
-	<footer class="footer">
-		<a><h3 class="footer__title">#VISITSEDONA</h3></a>
-		<ul class="footer__item">
-			<li class="footer__item__twitter">
-				<a href="#">twitter</a>
-			</li>
-			<li class="footer__item__facebook">
-				<a href="#">facebook</a>
-			</li>
-			<li class="footer__item__youtube">
-				<a href="#">youtube</a>
-			</li>
-		</ul>
-		<span class="footer__developed">
-			<a href="https://htmlacademy.ru/">
-				<p class="footer__text">РАЗРАБОТАНО</p>
-			</a>
-		</span>
-	</footer>
-</body>
-</html>
+				<span class="footer__developed">
+					<a href="https://htmlacademy.ru/">
+						<p class="footer__text">РАЗРАБОТАНО</p>
+					</a>
+				</span>
+			</footer>
+		</body>
+		</html>

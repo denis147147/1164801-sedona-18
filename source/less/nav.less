@@ -35,9 +35,8 @@
 				color: #88b6d1;
 			}
 		}
-	}
 
-	img {
+	.nav__logo {
 		display: flex;
 		justify-content: center;
 		position: relative;
@@ -48,9 +47,10 @@
 .nav__menu-button {
 	width: 30px;
 	height: 10px;
-	position: relative;
+	background: #ffffff;
+    position: relative;
 	left: 271px;
-	top: -38px;
+	top: -30px;
 	border: none;
 	outline: none;
 }
@@ -82,7 +82,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	background-color: #ffffff;
-	background-image: url("../img/back-mobile.jpg.png");
+	background-image: url("../img/back-mobile-foto.jpg");
 	background-repeat: no-repeat;
 
 	img {
@@ -100,7 +100,7 @@
 .header__background-foto,
 .header__background-form {
 	display: block;
-	background-image: url("../img/back-mobile-foto.png");
+	background-image: url("../img/back-mobile-foto");
 	height: 159px;
 	background-repeat: no-repeat;
 	margin-top: -15px;
@@ -116,6 +116,7 @@
 		position: relative;
 		top:58px;
 	}
+ }
 }
 
 
@@ -207,7 +208,7 @@
 	.header__background-foto,
 	.header__background-form {
 		display: block;
-		background-image: url("../img/back-desktop.jpg");
+		background-image: url("../img/back-tablet.jpg");
 		height: 291px;
 		background-repeat: no-repeat;
 		margin: inherit;
@@ -292,10 +293,11 @@
 			}
 
 			li {
+
 				&:nth-child(3) {
 					margin-left: 350px;
 				}
 			}
 		}
-	}
+   }
 }
