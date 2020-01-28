@@ -2,292 +2,326 @@
 .post-2,
 .post-3,
 .post-4 {
-border-top: 1px solid #eeeeee;
-padding: 23px 20px;
+	border-top: 1px solid #eeeeee;
+	margin-left: 20px;
 
-  &__foto {
-    position: relative;
-  }
+	&__foto {
+		position: relative;
+	}
 
-  &__title {
-    font-family: "PT Sans",Arial,sans-serif;
-	  font-size: 14px;
-  	line-height: 24px;
-	  text-transform: uppercase;
-	  font-weight: 700;
-    padding-top: 22px;
-  }
-  &__text {
-    font-family: "PT Sans",Arial,sans-serif;
-	  font-size: 14px;
-  	line-height: 24px;
-	  text-transform: none;
-	  font-weight: 400;
-  }
+	&__title {
+		font-family: "PT Sans",Arial,sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: uppercase;
+		font-weight: 700;
 
-  &__like {
-      border: none;
-      outline: none;
-      padding: 0;
-  }
+	}
+	&__text {
+		font-family: "PT Sans",Arial,sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: none;
+		font-weight: 400;
+	}
 
-  &__likes {
-    font-family: "PT Sans",Arial,sans-serif;
-	  font-size: 14px;
-  	line-height: 24px;
-	  text-transform: none;
-	  font-weight: 700;
+	&__like {
+		border: none;
+		outline: none;
+		padding: 0;
+	}
 
-    &::before {
-      content: url("../img/icon-like.svg");
-      opacity: 0.3;
-      margin-right: 10px;
-      position: relative;
-      top: 3px;
-    }
-  }
+	&__likes {
+		font-family: "PT Sans",Arial,sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: none;
+		font-weight: 700;
+		position: relative;
+		top: -10px;
+
+		&::before {
+			content: url("../img/icon-like.svg");
+			opacity: 0.3;
+			position: relative;
+			margin-right: 10px;
+			left: -5px;
+		}
+	}
 }
 
 .post-4 {
-  border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.post-1 {
+	padding-top: 20px;
+
+   p {
+	   margin-top: -15px;
+   }
+}
+
+.post-2 {
+	padding-top: 27px;
+
+	p {
+ 	   margin-top: -15px;
+    }
+}
+
+.post-3 {
+	padding-top: 27px;
+
+	p {
+ 	   margin-top: -15px;
+    }
+}
+
+.post-4 {
+	padding-top: 28px;
+
+	p {
+ 	   margin-top: -15px;
+    }
 }
 
 @media (min-width: 320px) {
 
-  .posts {
-    width: 320px;
-    margin: 0 auto;
-  }
+	.posts {
+		width: 320px;
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 768px) {
 
-  .posts {
-    width: 648px;
-    margin: 0 auto;
-    border-top: none;
-    display: flex;
-    flex-wrap: wrap;
+	.posts {
+		width: 648px;
+		margin: 0 auto;
+		border-top: none;
+		display: flex;
+		flex-wrap: wrap;
 
-    .post-1{
-      margin: 0 auto;
-      padding: 0;
-      background-color: #f2f2f2;
+		.post-1{
+			margin: 0 auto;
+			margin-top: 30px;
+			height: 480px;
+			padding: inherit;
+			background-color: #f2f2f2;
 
 
-      img {
-      content: url("../img/photo-sunset-tablet@1x.jpg");
-      border-top: none;
-    }
+			img {
+				content: url("../img/photo-sunset-tablet@1x.jpg");
+				border-top: none;
+			}
 
-      &__title {
-        padding: 0;
-        margin: 0;
-        padding-left: 20px;
-        padding-top: 20px;
-      }
+			&__title {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
 
-      &__text {
-        padding: 0;
-        margin: 0;
-        padding-left: 20px;
-      }
+			&__text {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+			}
 
-      &__likes {
-        position: relative;
-        left: 564px;
-        bottom: 37px;
-      }
-   }
+			&__likes {
+				left: 566px;
+				top: -35px;
+			}
+		}
 
-   .post-2 {
-     border-top: none;
-     padding: 0;
-     margin: 0;
+		.post-2 {
+			border-top: none;
+			padding: inherit;
+			margin: inherit;
+			height: 348px;
+			background-color: #f2f2f2;
 
-     background-color: #f2f2f2;
+			img {
+				content: url("../img/photo-cactus-tablet@1x.jpg");
+			}
 
-     img {
-       content: url("../img/photo-cactus-tablet@1x.jpg");
-     }
+			&__title {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
 
-     &__title {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-       padding-top: 20px;
-     }
+			&__text {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+			}
 
-     &__text {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-     }
+			&__likes {
+				left: 239px;
+				top: -35px;
+			}
+		}
 
-     &__likes {
-       position: relative;
-       left: 239px;
-       bottom: 37px;
-     }
-   }
+		.post-3 {
+			border-top: none;
+			padding: inherit;
+			margin: inherit;
+			height: 348px;
+			background-color: #eaeaea;
 
-   .post-3 {
-     border-top: none;
-     padding: 0;
-     margin: 0;
+			img {
+				content: url("../img/photo-roads-tablet@1x.jpg");
+			}
 
-     background-color: #eaeaea;
+			&__title {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
 
-     img {
-       content: url("../img/photo-roads-tablet@1x.jpg");
-     }
+			&__text {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+			}
 
-     &__title {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-       padding-top: 20px;
-     }
+			&__likes {
+				left: 239px;
+				top: -35px;
+			}
+		}
 
-     &__text {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-     }
+		.post-4 {
+			border-top: none;
+			padding: inherit;
+			margin: inherit;
+			height: 348px;
+			margin-left: 0;
+			background-color: #f2f2f2;
 
-     &__likes {
-       position: relative;
-       left: 239px;
-       bottom: 37px;
-     }
-   }
+			img {
+				content: url("../img/photo-bridge-tablet@1x.jpg");
+			}
 
-   .post-4 {
-     border-top: none;
-     padding: 0;
-     margin: 0;
-     background-color: #f2f2f2;
+			&__title {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
 
-     img {
-       content: url("../img/photo-bridge-tablet@1x.jpg");
-     }
+			&__text {
+				padding: 0;
+				margin: 0;
+				padding-left: 20px;
+			}
 
-     &__title {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-       padding-top: 20px;
-     }
-
-     &__text {
-       padding: 0;
-       margin: 0;
-       padding-left: 20px;
-     }
-
-     &__likes {
-       position: relative;
-       left: 239px;
-       bottom: 37px;
-     }
-   }
-  }
+			&__likes {
+				left: 239px;
+				top: -37px;
+			}
+		}
+	}
 }
 
 @media (min-width: 1280px) {
 
-  .posts {
-    width: 1200px;
-    margin: 0 auto;
-    border-top: none;
-    display: flex;
-    flex-wrap: wrap;
+	.posts {
+		width: 1200px;
+		margin: 0 auto;
+		border-top: none;
+		display: flex;
+		flex-wrap: wrap;
 
-    .signature {
-      color: #ffffff;
-      position: relative;
+		.signature {
+			color: #ffffff;
+			position: relative;
 
-    }
+		}
 
-    .signature-like {
-      color: #ffffff;
-      position: relative;
-      left: 300px;
-    }
+		.signature-like {
+			color: #ffffff;
+			position: relative;
+			left: 300px;
+		}
 
-    .text {
-      position: relative;
-      top: -84px;
-      height: 80px;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+		.text {
+			position: relative;
+			top: -83px;
+			height: 80px;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
 
-    .post-1 {
+		.post-1 {
+			height: 400px;
 
-      height: 400px;
+			img {
+				content: url("../img/photo-sunset-desktop@1x.jpg");
+			}
 
-      img {
-        content: url("../img/photo-sunset-desktop@1x.jpg");
-      }
+			.signature-like {
+				left: 1115px;
+				top: -33px;
+			}
 
-      .signature-like {
-        left: 1100px;
-      }
+			&__likes {
+				&::before {
+					content: url("../img/icon-like-white.svg");
+					opacity: 1;
+				}
+			}
+		}
 
-      &__likes {
-        &::before {
-          content: url("../img/icon-like-white.svg");
-          opacity: 1;
-        }
-      }
-    }
+		.post-2 {
 
-      .post-2 {
+			height: 267px;
 
-        height: 267px;
+			img {
+				content: url("../img/photo-cactus-desktop@1x.jpg");
+			}
 
-        img {
-          content: url("../img/photo-cactus-desktop@1x.jpg");
-        }
+			&__likes {
+				&::before {
+					content: url("../img/icon-like-white.svg");
+					opacity: 1;
+				}
+			}
+		}
 
-        &__likes {
-          &::before {
-            content: url("../img/icon-like-white.svg");
-            opacity: 1;
-          }
-        }
-      }
+		.post-3 {
 
-      .post-3 {
+			height: 267px;
 
-        height: 267px;
+			img {
+				content: url("../img/photo-roads-desktop@1x.jpg");
+			}
 
-        img {
-          content: url("../img/photo-roads-desktop@1x.jpg");
-        }
+			&__likes {
+				&::before {
+					content: url("../img/icon-like-white.svg");
+					opacity: 1;
+				}
+			}
+		}
 
-        &__likes {
-          &::before {
-            content: url("../img/icon-like-white.svg");
-            opacity: 1;
-          }
-        }
-    }
+		.post-4 {
 
-    .post-4 {
+			height: 267px;
 
-      height: 267px;
+			img {
+				content: url("../img/photo-bridge-desktop@1x.jpg");
+			}
 
-      img {
-        content: url("../img/photo-bridge-desktop@1x.jpg");
-      }
-
-      &__likes {
-        &::before {
-          content: url("../img/icon-like-white.svg");
-          opacity: 1;
-        }
-      }
-    }
-  }
+			&__likes {
+				&::before {
+					content: url("../img/icon-like-white.svg");
+					opacity: 1;
+				}
+			}
+		}
+	}
 }

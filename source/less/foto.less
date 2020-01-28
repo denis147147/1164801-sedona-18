@@ -1,58 +1,74 @@
 .foto {
 
-  &__title{
-    font-family: "PT Sans",Arial,sans-serif;
-	  font-size: 18px;
-	  line-height: 26px;
-    line-height: 26px;
-	  text-transform: uppercase;
-	  text-align: center;
-	  font-weight: 700;
-    margin-top: 44px;
-  }
+	&__title{
+		font-family: "PT Sans",Arial,sans-serif;
+		font-size: 18px;
+		line-height: 26px;
+		line-height: 26px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 700;
+		margin-top: 40px;
+	}
 
-  &__text {
-    font-family: "PT Sans",Arial,sans-serif;
-	  font-size: 14px;
-	  line-height: 26px;
-	  text-transform: uppercase;
-	  text-align: center;
-	  font-weight: 400;
-    margin-top: 20px;
-    padding-bottom: 23px;
-  }
+	&__text {
+		font-family: "PT Sans",Arial,sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 400;
+		margin-top: 25px;
+		margin-bottom: 28px;
+		padding-bottom: 73px;
+		padding: 0 25px;
+		width: 270px;
+	}
 }
 
 @media (min-width: 320px) {
 
-  .foto {
-    width: 320px;
-    margin: 0 auto;
-  }
+	.foto {
+		width: 320px;
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 768px) {
 
-  .foto {
-    width: 442px;
-    margin: 0 auto;
+	.foto {
+		width: 442px;
+		margin: 0 auto;
 
 
-    &__text {
-      margin-top: 20px;
-    }
+		&__text {
+			margin-top: 20px;
+			width: 430px;
+			padding: 10px 5px;
+		}
 
-    &__title {
-      font-size: 30px;
-      margin-top: 70px;
-    }
-  }
+		&__title {
+			font-size: 30px;
+			margin-top: 75px;
+		}
+	}
 }
 
 @media (min-width: 1280px) {
 
-  .foto {
-    width: 442px;
-    margin: 0 auto;
-  }
+	.foto {
+		width: 442px;
+		margin: 0 auto;
+
+		&__text {
+			margin-top: 20px;
+			width: 430px;
+			padding: 10px 5px;
+		}
+
+		&__title {
+			font-size: 30px;
+			margin-top: 110px;
+		}
+	}
 }
