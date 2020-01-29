@@ -10,34 +10,34 @@ var email = form.querySelector("[name=email]");
 var phone = form.querySelector("[name=phone]");
 
 link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (!user_name.value  || !surname.value  || !phone.value || !email.value ) {
-    evt.preventDefault();
-    popup_error.classList.add("modal-show");
-    popup_error.offsetWidth = popup_error.offsetWidth;
-    popup = popup_error;
-  } else {
-    popup_sent.classList.add("modal-show");
-    popup_sent.offsetWidth = popup_sent.offsetWidth;
-    popup = popup_sent;
-  }
+	evt.preventDefault();
+	if (!user_name.value  || !surname.value  || !phone.value || !email.value ) {
+		evt.preventDefault();
+		popup_error.classList.add("modal-show");
+		popup_error.offsetWidth = popup_error.offsetWidth;
+		popup = popup_error;
+	} else {
+		popup_sent.classList.add("modal-show");
+		popup_sent.offsetWidth = popup_sent.offsetWidth;
+		popup = popup_sent;
+	}
 })
 
 close_error.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup_error.classList.remove("modal-show");
+	evt.preventDefault();
+	popup_error.classList.remove("modal-show");
 });
 
 close_sent.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup_sent.classList.remove("modal-show");
+	evt.preventDefault();
+	popup_sent.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-    }
-  }
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (popup.classList.contains("modal-show")) {
+			popup.classList.remove("modal-show");
+		}
+	}
 });

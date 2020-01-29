@@ -36,45 +36,45 @@
 			}
 		}
 
-	.nav__logo {
-		display: flex;
-		justify-content: center;
-		position: relative;
-		top: 14px;
+		.nav__logo {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			top: 14px;
+		}
 	}
-}
 
-.nav__menu-button {
-	width: 30px;
-	height: 10px;
-	background: #ffffff;
-    position: relative;
-	left: 271px;
-	top: -30px;
-	border: none;
-	outline: none;
-}
+	.nav__menu-button {
+		width: 30px;
+		height: 10px;
+		background: #ffffff;
+		position: relative;
+		left: 271px;
+		top: -30px;
+		border: none;
+		outline: none;
+	}
 
-.nav__menu-button > span,
-.nav__menu-button > span::before,
-.nav__menu-button > span::after {
-	display: block;
-	width: 23px;
-	height: 4px;
-	background-color: #81b3d2;
-}
+	.nav__menu-button > span,
+	.nav__menu-button > span::before,
+	.nav__menu-button > span::after {
+		display: block;
+		width: 23px;
+		height: 4px;
+		background-color: #81b3d2;
+	}
 
-.nav__menu-button > span::before {
-	content: "";
-	top: -8px;
-	position: relative;
-}
+	.nav__menu-button > span::before {
+		content: "";
+		top: -8px;
+		position: relative;
+	}
 
-.nav__menu-button > span::after {
-	content: "";
-	top: 4px;
-	position: relative;
-}
+	.nav__menu-button > span::after {
+		content: "";
+		top: 4px;
+		position: relative;
+	}
 }
 
 
@@ -91,7 +91,8 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		background-color: #ffffff;
-		background-image: url("../img/back-mobile.jpg");
+		background-image: url("../img/bg-back-mobile@1x.jpg");
+		background-position: center;
 		background-repeat: no-repeat;
 
 		img {
@@ -100,18 +101,19 @@
 		}
 
 		&::after {
-			content: url("../img/intro-triangle.svg.png");
+			content: url("../img/bg-intro-triangle-mobile.svg");
 			position: relative;
-			top: 332px;
+			top: 363px;
 		}
 	}
 
 	.header__background-foto,
 	.header__background-form {
 		display: block;
-		background-image: url("../img/back-mobile-foto.png");
+		background-image: url("../img/bg-back-mobile@1x.jpg");
 		height: 159px;
 		background-repeat: no-repeat;
+		background-position: bottom;
 		margin-top: -15px;
 
 		img {
@@ -121,11 +123,11 @@
 		}
 
 		&::after {
-			content: url("../img/intro-triangle.svg.png");
+			content: url("../img/bg-intro-triangle-mobile.svg");
 			position: relative;
-			top:58px;
+			top:90px;
 		}
-	 }
+	}
 }
 
 @media (min-width: 768px) {
@@ -267,7 +269,7 @@
 	.header__background-foto,
 	.header__background-form {
 		display: block;
-		background-image: url("../img/back-desktop1200.jpg");
+		background-image: url("../img/bg-back-desktop@1x.jpg");
 		width: 1200px;
 		height: 305px;
 		background-repeat: no-repeat;
@@ -303,5 +305,5 @@
 				}
 			}
 		}
-   }
+	}
 }
