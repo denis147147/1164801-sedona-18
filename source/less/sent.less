@@ -1,0 +1,133 @@
+.comment {
+
+	.comment__sent {
+		position: fixed;
+		width: 320px;
+		height: 280px;
+		top: 50px;
+		z-index: 100;
+		margin: 0 auto;
+		text-align: center;
+		color: #000000;
+		background-color: #ffffff;
+		box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+		&__title {
+			font-family: "PT Sans",Arial,sans-serif;
+			margin-top: 46px;
+			margin-bottom: 40px;
+			padding: 0 40px;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		&__description {
+			font-family: "PT Sans",Arial,sans-serif;
+			width: 240px;
+			text-transform: uppercase;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			line-height: 24px;
+			color: #000000;
+		}
+
+		&__button {
+			width: 180px;
+			margin-bottom: 35px;
+			padding-top: 22px;
+			padding-bottom: 22px;
+			background-color: #81b3d2;
+			border: none;
+			outline: none;
+		}
+
+		button {
+			font-family: "PT Sans",Arial,sans-serif;
+			color: #ffffff;
+			font-size: 18px;
+			line-height: 26px;
+			text-transform: uppercase;
+			width: 180px;
+			height: 58px;
+		}
+	}
+}
+
+.comment__sent {
+	display: none;
+}
+
+@media (min-width: 768px) {
+
+	.comment {
+
+		.comment__sent {
+			position: fixed;
+			width: 400px;
+			height: 347px;
+			top: 50px;
+			left: 30%;
+			z-index: 100;
+			margin: 0 auto;
+			text-align: center;
+			color: #000000;
+			background-color: #ffffff;
+			box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+			&__title {
+				font-family: "PT Sans",Arial,sans-serif;
+				margin-top: 46px;
+				margin-bottom: 40px;
+				padding: 0 90px;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 40px;
+			}
+
+			&__description {
+				font-family: "PT Sans",Arial,sans-serif;
+				width: 320px;
+				text-transform: uppercase;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				line-height: 24px;
+				color: #000000;
+			}
+
+			&__button {
+				margin-bottom: 35px;
+				padding-top: 22px;
+				padding-bottom: 22px;
+				background-color: #81b3d2;
+				border: none;
+				outline: none;
+			}
+
+			button {
+				font-family: "PT Sans",Arial,sans-serif;
+				color: #ffffff;
+				font-size: 18px;
+				line-height: 26px;
+				text-transform: uppercase;
+				width: 272px;
+				height: 58px;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 1280px) {
+
+	.comment{
+
+		.comment__sent {
+			left: 35%;
+		}
+	}
+}
